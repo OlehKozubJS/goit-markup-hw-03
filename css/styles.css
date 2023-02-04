@@ -14,8 +14,6 @@
 /* Common style settings */
 
 body {
-    max-width: 1440px; 
-    margin: 0 auto;
     font-family: 'Roboto', sans-serif;
     font-size: 16px;
     font-weight: 400;
@@ -59,6 +57,8 @@ button {
 }
 
 .container { 
+    max-width: 1158px; 
+    margin: 0 auto;
     padding: 0 15px; 
 }
 
@@ -84,8 +84,10 @@ nav {
 header .container,
 nav,
 nav ul,
-address ul {
+address ul,
+.filter-buttons {
     display: flex;
+    justify-content: center;
 }
 
 nav ul,
@@ -192,7 +194,7 @@ address ul {
 
 .order-section {
     background-color: var(--headline-clr);
-    padding: 188px 423px;
+    padding: 188px;
 }
 
 .order-service-button {
@@ -259,7 +261,8 @@ address ul {
 /* Product section settings */
 
 .filter-buttons {
-    padding: 96px 406px 72px;
+    padding-top: 96px;
+    padding-bottom: 72px;
     display: flex;
     gap: 24px;
 }
