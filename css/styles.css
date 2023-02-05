@@ -22,6 +22,11 @@ body {
     color: var(--common-text-clr);
 }
 
+body * {
+    flex-wrap: wrap;
+    gap: initial;
+}
+
 a {
     text-decoration: none;
 }
@@ -75,8 +80,12 @@ button {
     border-bottom: 1px solid var(--accent-and-footer-text-clr);
 }
 
+.header-section .container {
+    column-gap: 332px;
+}
+
 .navigation {
-    margin-right: 332px;
+    column-gap: 76px;
 }
 
 .header-section .container,
@@ -90,14 +99,13 @@ button {
 
 .navigation-links,
 .contact-links {
-    gap: 40px;
+    column-gap: 40px;
 }
 
 
 /* Logo settings */
 
 .logo {
-    margin-right: 76px;
     font-family: 'Raleway', sans-serif;
     text-transform: uppercase;
     font-size: 18px;
@@ -184,7 +192,7 @@ button {
     background-color: var(--headline-clr);
 }
 
-.main-headline {
+.order-headline {
     margin-bottom: 48px;
     text-align: center;
     font-size: 56px;
