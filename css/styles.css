@@ -36,10 +36,6 @@ h1, h2, h3, p {
     margin: 0;
 }
 
-section {
-    padding-bottom: 120px;
-}
-
 button {
     font-family: inherit;
     font-size: inherit;
@@ -72,26 +68,28 @@ button {
 
 /* Header settings*/
 
-header {
-    padding: 24px 141px;
+.header-section {
+    padding-top: 24px;
+    padding-bottom: 24px;
+    display: flex;
     border-bottom: 1px solid var(--accent-and-footer-text-clr);
 }
 
-nav {
-    padding-right: 332px;
+.navigation {
+    margin-right: 332px;
 }
 
-header .container,
-nav,
-nav ul,
-address ul,
+.header-section .container,
+.navigation,
+.navigation-links,
+.contact-links,
 .filter-buttons {
     display: flex;
     justify-content: center;
 }
 
-nav ul,
-address ul {
+.navigation-links,
+.contact-links {
     gap: 40px;
 }
 
@@ -99,7 +97,7 @@ address ul {
 /* Logo settings */
 
 .logo {
-    padding-right: 76px;
+    margin-right: 76px;
     font-family: 'Raleway', sans-serif;
     text-transform: uppercase;
     font-size: 18px;
@@ -149,10 +147,9 @@ address ul {
 }
 
 .footer-text {
+    margin-top: 16px;
     width: 264px;
     color: var(--accent-and-footer-text-clr);
-    padding-top: 16px;
-    padding-bottom: 100px;
 }
 
 
@@ -171,17 +168,7 @@ address ul {
     margin: -1px;
  }
 
- .main-headline {
-    text-align: center;
-    padding-bottom: 48px;
-    font-size: 56px;
-    font-weight: 700;
-    line-height: 1.07;
-    color: var(--common-white-color);
-}
-
  .section-headline {
-    padding-top: 120px;
     padding-bottom: 72px;
     text-align: center;
     font-size: 36px;
@@ -193,8 +180,17 @@ address ul {
 /* Sections settings */
 
 .order-section {
+    padding-block: 188px;
     background-color: var(--headline-clr);
-    padding: 188px;
+}
+
+.main-headline {
+    margin-bottom: 48px;
+    text-align: center;
+    font-size: 56px;
+    font-weight: 700;
+    line-height: 1.07;
+    color: var(--common-white-color);
 }
 
 .order-service-button {
@@ -207,6 +203,16 @@ address ul {
 .order-service-button:hover,
 .order-service-button:focus {
     background-color: var(--hover-focus-clr);
+}
+
+.advantage-section,
+.hero-section {
+    padding-block: 120px;
+}
+
+.production-section,
+.product-section {
+    padding-bottom: 120px;
 }
 
 .advantage-cards,
@@ -286,7 +292,8 @@ address ul {
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
-    gap: 24px;
+    column-gap: 24px;
+    row-gap: 48px;
 }
 
 .product-card {
@@ -295,9 +302,7 @@ address ul {
 }
 
 .product-info {
-    padding-top: 32px;
-    padding-bottom: 32px;
-    padding-left: 16px;
+    padding: 32px 16px;
 }
 
 .product-headline {
