@@ -14,6 +14,7 @@
 /* Common style settings */
 
 body {
+    margin: 0;
     font-family: 'Roboto', sans-serif;
     font-size: 16px;
     font-weight: 400;
@@ -81,7 +82,7 @@ button {
 }
 
 .header-section .container {
-    column-gap: 332px;
+    width: 100%;
 }
 
 .navigation {
@@ -146,12 +147,16 @@ button {
     color: var(--hover-focus-clr);
 }
 
+.contacts {
+    margin-left: auto;
+}
+
 
 /* Footer settings */
 
 .footer-section {
     background-color: var(--headline-clr);
-    padding: 100px 141px 100px;
+    padding: 100px 0px;
 }
 
 .footer-text {
@@ -176,7 +181,7 @@ button {
  }
 
  .section-headline {
-    padding-bottom: 72px;
+    margin-bottom: 72px;
     text-align: center;
     font-size: 36px;
     font-weight: 700;
@@ -225,8 +230,12 @@ button {
 .advantage-cards,
 .production-cards {
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     gap: 24px;
+}
+
+.advantage-headline {
+    margin-bottom: 8px;
 }
 
 .advantage-card {
@@ -242,7 +251,7 @@ button {
 
 .hero-cards {
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     gap: 24px;
 }
 
@@ -258,6 +267,7 @@ button {
 }
 
 .hero-headline {
+    margin-bottom: 8px;
     text-align: center;
     font-size: 20px;
     font-weight: 500;
@@ -273,9 +283,12 @@ button {
 
 /* Product section settings */
 
-.filter-buttons {
+.product-section {
     padding-top: 96px;
-    padding-bottom: 72px;
+}
+
+.filter-buttons {
+    margin-bottom: 72px;
     display: flex;
     gap: 24px;
 }
@@ -303,16 +316,20 @@ button {
     row-gap: 48px;
 }
 
-.product-card {
-    width: 360px;
-    border: 1px solid var(--accent-and-footer-text-clr);
+.product-link{
+    line-height: 0;
 }
 
 .product-info {
+    line-height: 1.5;
     padding: 32px 16px;
+    border-left: 1px solid var(--accent-and-footer-text-clr);
+    border-bottom: 1px solid var(--accent-and-footer-text-clr);
+    border-right: 1px solid var(--accent-and-footer-text-clr);
 }
 
 .product-headline {
+    margin-bottom: 8px;
     font-size: 20px;
     font-weight: 500;
     line-height: 1.2;
